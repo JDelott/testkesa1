@@ -1,4 +1,5 @@
 import React from 'react';
+import FAQSection from '../components/FAQ'; // Import the FAQSection component
 
 export default function App() {
   return (
@@ -19,9 +20,21 @@ export default function App() {
               </a>
               <a
                 href="#learn-more"
-                className="bg-gray-700 hover:bg-gray-600 text-white font-semibold py-2 px-4 rounded transition-colors duration-300"
+                className="inline-flex items-center justify-center bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded-md shadow-md transition duration-300 ease-in-out"
               >
-                Learn More
+                <span>Learn More</span>
+                <svg
+                  className="ml-2 -mr-1 h-5 w-5"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fillRule="evenodd"
+                    d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                    clipRule="evenodd"
+                  />
+                </svg>
               </a>
             </div>
           </div>
@@ -62,6 +75,9 @@ export default function App() {
             <li>Seamless deployment and monitoring</li>
           </ul>
         </div>
+
+        {/* Render the FAQSection component */}
+        <FAQSection />
       </main>
 
       <footer className="bg-black py-4">
